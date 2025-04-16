@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-codepipline-prod-aws-bucket"
+    bucket         = "terraform-codepipline-devops-aws-bucket"
     key            = "terraform.tfstate"
     region         = "ca-central-1"
   }
