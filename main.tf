@@ -573,7 +573,7 @@ module "alb_log_bucket" {
 module "files_bucket_prod_app" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "~> 4.0"
-  bucket = "app-prod-trillium-files"
+  bucket = "app-devops-trillium-files"
   control_object_ownership = true
   object_ownership         = "ObjectWriter"
 
