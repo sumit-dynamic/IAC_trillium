@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-codepipline-devops-aws-bucket"
+    bucket         = "terraform-codepipline-prod-devops-aws-bucket"
     key            = "terraform.tfstate"
     region         = "ca-central-1"
   }
@@ -42,25 +42,25 @@ locals {
   current_identity = data.aws_caller_identity.current.arn
   tags = {
     ProjectName    = "TrilliumInnovationCareInc"
-    Github = "https://github.com/TrilliumInnovationCareInc/AWS_IAC_Terraform_Prod.git"
+    Github = "https://github.com/sumit-dynamic/IAC_trillium.git"
     Environment  = "Prod"
     Prod = "Terraform Code"
   }
   igw_tags = {
     ProjectName    = "TrilliumInnovationCareInc"
-    Github = "https://github.com/TrilliumInnovationCareInc/AWS_IAC_Terraform_Prod.git"
+    Github = "https://github.com/sumit-dynamic/IAC_trillium.git"
     Environment  = "Prod"
     Prod = "Terraform Code"
   }
   nat_gateway_tags = {
     ProjectName    = "TrilliumInnovationCareInc"
-    Github = "https://github.com/TrilliumInnovationCareInc/AWS_IAC_Terraform_Prod.git"
+    Github = "https://github.com/sumit-dynamic/IAC_trillium.git"
     Environment  = "Prod"
     Prod = "Terraform Code"
     }
   default_route_table_tags ={
     ProjectName    = "TrilliumInnovationCareInc"
-    Github = "https://github.com/TrilliumInnovationCareInc/AWS_IAC_Terraform_Prod.git"
+    Github = "https://github.com/sumit-dynamic/IAC_trillium.git"
     Environment  = "Prod"
     Prod = "Terraform Code"
   }
